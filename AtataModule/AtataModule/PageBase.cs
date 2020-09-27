@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace AtataModule
 {
-    public class Tests:TestBase
+    public abstract class PageBase
     {
-        // first commit
     }
 }
