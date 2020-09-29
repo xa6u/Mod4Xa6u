@@ -1,7 +1,7 @@
 ﻿using Atata;
 using NUnit.Framework;
 
-namespace AtataModule
+namespace AtataModule.Tests
 {
     public abstract class TestBase
     {
@@ -9,17 +9,21 @@ namespace AtataModule
         public void SetUo()
         {
             AtataContext.Configure()
-                .UseChrome()
+                .UseChrome().WithArguments("start-maximized")
                 .UseBaseUrl("http://www.yesk.com.ua/")
                 .Build()
-                ;
-
-                
+                ;                            
         }
 
         [TearDown]
         public void TearDown()
         {
+            AtataContext.Current?.CleanUp();
+        }
+
+        public MainPage OpenSite()
+        {
+            return Go.To<MainPage>(url: "http://www.yesk.com.ua/");
 
         }
     }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AtataModule
+namespace AtataModule.Pages
 {
-    public class Tests:TestBase
+    using _ = AboutMePage;
+    public class AboutMePage : BasePage<_>
     {
-        // first commit
     }
 }

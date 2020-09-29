@@ -58,9 +58,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PageBase.cs" />
-    <Compile Include="TestBase.cs" />
-    <Compile Include="Tests.cs" />
+    <Compile Include="Controls\ItProjectsTable.cs" />
+    <Compile Include="Pages\AboutMePage.cs" />
+    <Compile Include="Pages\AllTopicsPage.cs" />
+    <Compile Include="Pages\ContactsPage.cs" />
+    <Compile Include="Pages\ControlsPage.cs" />
+    <Compile Include="Pages\MainPage.cs" />
+    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\WebDriverCoursePage.cs" />
+    <Compile Include="Pages\WebElementsPage.cs" />
+    <Compile Include="Tests\Categoties.cs" />
+    <Compile Include="Tests\TestBase.cs" />
+    <Compile Include="Tests\Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

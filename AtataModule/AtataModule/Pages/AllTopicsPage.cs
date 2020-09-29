@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AtataModule
+namespace AtataModule.Pages
 {
-    public abstract class PageBase
+    using _ = AllTopicsPage;
+    public class AllTopicsPage : BasePage<_>
     {
     }
 }
