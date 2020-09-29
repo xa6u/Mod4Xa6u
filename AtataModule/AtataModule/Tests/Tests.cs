@@ -17,8 +17,8 @@ namespace AtataModule.Tests
                 Dropdown.Click().
                 WebDriverCourcePage.Click().
                 SearchElementsOnThePage.Click().
-                ControlsPage.Click()
-                //NavigateToAboutMePage().
+                ControlsPage.Click().
+                NavigateToAboutMePage()
                 //NavigateToContactsPage()
                 ;
         }
