@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AtataModule.Pages
+namespace AtataModule
 {
     using _ = WebDriverCoursePage;
     public class WebDriverCoursePage : BasePage<_>
     {
         [FindByXPath("//a[text()='Поиск элементов на странице']"), ControlDefinition]
-        public Link<WebElementsPage> SearchElementsOnThePage { get; private set; }
+        public Control<_> NavigateTo_SearchElementsOnThePage { get; private set; }
 
 
     }

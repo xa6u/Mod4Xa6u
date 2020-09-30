@@ -1,7 +1,7 @@
 ﻿using Atata;
 using NUnit.Framework;
 
-namespace AtataModule.Tests
+namespace AtataModule
 {
     public abstract class TestBase
     {
@@ -10,7 +10,7 @@ namespace AtataModule.Tests
         {
             AtataContext.Configure()
                 .UseChrome().WithArguments("start-maximized")
-                .UseBaseUrl("http://www.yesk.com.ua/")
+                //.UseBaseUrl("http://www.yesk.com.ua/")
                 .Build()
                 ;                            
         }

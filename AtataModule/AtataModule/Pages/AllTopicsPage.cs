@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AtataModule.Pages
+namespace AtataModule
 {
     using _ = AllTopicsPage;
     public class AllTopicsPage : BasePage<_>

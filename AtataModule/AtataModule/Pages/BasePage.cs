@@ -1,7 +1,7 @@
 ﻿using Atata;
-using AtataModule.Pages;
 
-namespace AtataModule.Pages
+
+namespace AtataModule
 {
 
     public abstract class BasePage<TOwner> : Page<TOwner>
@@ -24,5 +24,6 @@ namespace AtataModule.Pages
             return Go.To<WebDriverCoursePage>(url: "http://www.yesk.com.ua/705ea-contact/");
 
         }
+
     }
 }

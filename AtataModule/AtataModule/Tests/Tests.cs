@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 
 
-namespace AtataModule.Tests
+namespace AtataModule
 {
 
    // using _ = Tests;
@@ -15,11 +15,11 @@ namespace AtataModule.Tests
         {
             OpenSite().
                 Dropdown.Click().
-                WebDriverCourcePage.Click().
-                SearchElementsOnThePage.Click().
-                ControlsPage.Click().
-                NavigateToAboutMePage()
-                //NavigateToContactsPage()
+                NavigateTo_WebDriverCourcePage.ClickAndGo<WebDriverCoursePage>().
+                NavigateTo_SearchElementsOnThePage.ClickAndGo<WebElementsPage>().
+                NavigateTo_ControlsPage.ClickAndGo<ControlsPage>()
+            //NavigateToAboutMePage().
+            //    NavigateToContactsPage()
                 ;
         }
 

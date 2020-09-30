@@ -1,5 +1,5 @@
 ﻿
-namespace AtataModule.Tests
+namespace AtataModule
 {
     public static class Categories
     {
