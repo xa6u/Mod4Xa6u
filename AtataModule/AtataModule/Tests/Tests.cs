@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Atata;
+using NUnit.Framework;
 
 
 namespace AtataModule
@@ -17,9 +18,11 @@ namespace AtataModule
                 Dropdown.Click().
                 NavigateTo_WebDriverCourcePage.ClickAndGo<WebDriverCoursePage>().
                 NavigateTo_SearchElementsOnThePage.ClickAndGo<WebElementsPage>().
-                NavigateTo_ControlsPage.ClickAndGo<ControlsPage>()
-            //NavigateToAboutMePage().
-            //    NavigateToContactsPage()
+                NavigateTo_ControlsPage.ClickAndGo<ControlsPage>().
+                CompanyTable.Rows[x=>x.Name =="Facebook" && x.Budget == "12300"].Should.Exist().
+                TableToTest.Items[x => x.Name == "Facebook" && x.Budget == "12300"].Should.Exist()
+              //NavigateToAboutMePage().
+              //NavigateToContactsPage()
                 ;
         }
 
